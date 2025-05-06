@@ -1,0 +1,189 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: #fdf6f0;
+  font-family: "Segoe UI", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body h1 {
+  margin-top: 10px;
+  color: #4e342e;
+}
+
+body h2,
+h3 {
+  color: #6d4c41;
+}
+
+main {
+  width: 100%;
+}
+
+.titulo {
+  width: 100%;
+}
+
+.checkboxs {
+  width: 100%;
+  display: flex;
+}
+
+.sectioncheckbox {
+  width: 50%;
+}
+
+#checkboxcasa {
+  text-align: right;
+  padding-right: 30px;
+}
+
+#checkboxfora {
+  text-align: left;
+  padding-left: 30px;
+}
+
+#casa {
+  margin-right: 12px;
+}
+
+#fora {
+  margin-left: 12px;
+}
+
+.textarea {
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#gosta {
+  width: 35%;
+  height: 50px;
+  border-radius: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.div-final button {
+  background-color: white;
+  color: #5d4037;
+  margin-top: 20px;
+  width: 200px;
+  height: 50px;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 16px;
+  border: 2px solid #5d4037;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.div-final button:hover {
+  background-color: #5d4037;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.social-section {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.social-icon {
+  margin: 0 10px;
+  font-size: 2rem;
+  text-decoration: none;
+}
+
+.social-icon.github {
+  color: #333;
+}
+
+.social-icon.linkedin {
+  color: #0077b5;
+}
+
+.social-icon.instagram {
+  color: #e1306c;
+}
+
+.curtir-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 2rem;
+}
+
+.curtido {
+  color: #28a745; /* verde quando curtido */
+}
+
+.nao-curtido {
+  color: #007bff; /* azul padrão */
+}
+
+/* ========== RESPONSIVIDADE ========== */
+@media (max-width: 768px) {
+  body h1 {
+    font-size: 40px;
+  }
+
+  body h2,
+  h3 {
+    font-size: 18px;
+  }
+
+  .checkboxs {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sectioncheckbox {
+    width: 100%;
+    text-align: center !important;
+    padding: 10px 0;
+  }
+
+  #checkboxcasa,
+  #checkboxfora {
+    padding: 0;
+    text-align: center;
+  }
+
+  #casa,
+  #fora {
+    margin: 0 10px;
+  }
+
+  .textarea {
+    width: 90%;
+  }
+
+  #gosta {
+    width: 100%;
+    height: 100px;
+    font-size: 1rem;
+  }
+
+  .div-final button {
+    width: 90%;
+    font-size: 1.2rem;
+  }
+
+  .social-icon {
+    font-size: 1.5rem;
+  }
+}

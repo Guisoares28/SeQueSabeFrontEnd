@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <title>SeQueSabe</title>
+  </head>
+  <body>
+    <main>
+      <section class="titulo">
+        <h1 style="font-size: 60px">SeQueSabe</h1>
+        <h2>
+          Não sabe oque comer? <br />
+          Nós decidimos para você
+        </h2>
+        <h3>Se souber nos diga onde prefere comer</h3>
+      </section>
+
+      <div class="checkboxs">
+        <section class="sectioncheckbox" id="checkboxcasa">
+          <h3>Casa</h3>
+          <input type="checkbox" name="casa" id="casa" value="casa" />
+        </section>
+        <section class="sectioncheckbox" id="checkboxfora">
+          <h3>Fora</h3>
+          <input type="checkbox" name="fora" id="fora" value="fora" />
+        </section>
+      </div>
+
+      <div class="textarea">
+        <h3>Digite abaixo oque vocês não gostam de comer</h3>
+        <section class="sectiontextarea">
+          <textarea
+            name="gosta"
+            id="gosta"
+            placeholder="japonesa,carne,hotdog,peixe"
+          ></textarea>
+        </section>
+      </div>
+      <div class="div-final">
+        <h1 id="decidido"></h1>
+        <button id="bt-enviar">Decide Ai!</button>
+      </div>
+      <div id="rodape">
+        <h3>Foram decididas <span id="contador"></span> vezes</h3>
+      </div>
+      <script src="scripts.js"></script>
+      <div class="social-section">
+        <!-- Redes sociais -->
+        <a
+          href="https://github.com/Guisoares28"
+          target="_blank"
+          class="social-icon github"
+        >
+          <i class="fab fa-github"></i>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/guilherme-soares-baa32b296/"
+          target="_blank"
+          class="social-icon linkedin"
+        >
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a
+          href="https://www.instagram.com/gui.soares28"
+          target="_blank"
+          class="social-icon instagram"
+        >
+          <i class="fab fa-instagram"></i>
+        </a>
+      </div>
+    </main>
+  </body>
+</html>
